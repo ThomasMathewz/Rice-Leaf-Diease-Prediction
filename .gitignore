@@ -13,3 +13,5 @@ Thumbs.db
 
 # Logs or temporary files
 *.log
+
+model.keras
