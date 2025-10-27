@@ -99,20 +99,18 @@ function, tracking 'accuracy' as the primary metric.
 ## 4. Results and Evaluation
 
 ### 4.1. MODEL TRAINING
-The model was trained for 87 epochs using a batch size of 16. The training process utilized
+The model was trained for 49 epochs using a batch size of 16. The training process utilized
 the augmented training data, validating against the separate validation set to monitor
-performance and check for overfitting. The model stopped training at the 87th epoch using
+performance and check for overfitting. The model stopped training at the 49th epoch using
 the early stopping mechanism. The learning rate was also adjusted during training. Out of a
-total of 100 epochs, it stopped at epoch 87 because the loss function had not improved for
-the last 15 epochs, i.e., the Patience Value was 15. Finally the best weight from 72th epoch
-is selected finally.
-
+total of 100 epochs, it stopped at epoch 49 because the loss function had not improved for
+the last 15 epochs, i.e., the Patience Value was 15. Finally, the best weights were loaded using **ModelCheckpoint**.
 ### 4.2. MODEL PERFORMANCE
 The model's performance was evaluated by plotting the training and validation accuracy/loss
 over the 20 epochs and by assessing the final accuracy on the unseen test set.
 > - Training Phase Accuracy: During training phase model achieved a Accuracy of 92%
 on Training data and 83% on Validation Data.
-> - Final Test Accuracy: The model achieved a Test Accuracy of 75.00% on the 12 test
+> - Final Test Accuracy: The model achieved a Test **Accuracy of 75.00%** on the 12 test
 images.
 > - Classification Report & Confusion Matrix: A classification report and confusion
 matrix were generated. These results provided a detailed breakdown of precision,
